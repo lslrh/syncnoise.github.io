@@ -139,18 +139,18 @@
         </div>
       </div>
 
-      <p style="font-size: 16px;"> <b>SyncNoise</b> enables high-quality and controllable editing that closely adheres to the textual instructions with minimal changes to irrelevant regions. </p>
+      <div style="text-align: left; font-size: 16px;"> <b>SyncNoise</b> enables high-quality and controllable editing that closely adheres to the textual instructions with minimal changes to irrelevant regions. </div>
 
       <img src="./data/images/results.jpg" style="width:100%;">
 
       <h2 class="section-header">Abstract</h2>
       <div class="paragraph">
         <p>
-          Text-based 2D diffusion models have demonstrated impressive capabilities in image generation and editing. 
+            Text-based 2D diffusion models have demonstrated impressive capabilities in image generation and editing. 
           Leveraging these advancements, these models also exhibit substantial potential for 3D editing tasks. 
           However, achieving consistent edits across multiple viewpoints remains a challenge. 
           While the iterative dataset update (IDU) is capable of achieving global consistency, 
-          it often suffers from slow convergence and over-smoothed textures. We propose SyncNoise, 
+          it often suffers from slow convergence and over-smoothed textures. To overcome these limitations, we propose SyncNoise, 
           a novel geometry-guided multi-view consistent noise editing approach for high-fidelity 3D scene editing. 
           Our method synchronously edits multiple views with 2D diffusion models while enforcing multi-view noise predictions 
           to be geometrically consistent, which ensures global consistency in both semantic structure and low-frequency appearance. 
@@ -162,7 +162,13 @@
           especially in scenes with complex textures, by enhancing geometric consistency at the noise and pixel levels.
         </p>
       </div>
-      
+
+      <h2 class="section-header">Pipeline</h2>
+      <video id="main-video" muted autoplay controls playsinline loop>
+        <source id="mp4" src="data/video/pipeline.mp4" type="video/mp4">
+      </video>
+
+      <h2 class="section-header">Results</h2>
       <video id="main-video" muted autoplay controls playsinline loop>
         <source id="mp4" src="data/video/fangzhou.mp4" type="video/mp4">
       </video>
